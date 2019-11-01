@@ -1,0 +1,179 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:i18n="http://xml.zope.org/namespaces/i18n" lang="en"
+  metal:use-macro="context/main_template/macros/master" i18n:domain="plone">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<metal:override fill-slot="top_slot" tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);
+                disable_column_two python:request.set('disable_plone.rightcolumn',1);" />
+<metal:css fill-slot="style_slot">
+  <style type="text/css">
+    #content h1.documentFirstHeading {
+      display: none;
+    }
+
+    #content h1.documentFirstHeading.titleThanks {
+      display: block;
+      margin-top: 20px;
+      color: #9a0a0a;
+    }
+
+    div#portal-breadcrumbs {
+      display: none;
+    }
+
+    #content a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
+
+    .demais-polos-ead {
+      min-height: 120px;
+      font-family: 'Roboto', sans-serif;
+      width: 32.66%;
+      margin-left: 1%;
+      display: block;
+      padding: 15px 0;
+      float: left;
+      text-align: center;
+      border-radius: 3px;
+      align-items: center;
+      background: rgba(240, 104, 104, 1);
+      background: -moz-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240, 104, 104, 1)), color-stop(100%, rgba(194, 15, 15, 1)));
+      background: -webkit-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 1) 100%);
+      background: -o-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 1) 100%);
+      background: linear-gradient(to bottom, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f06868', endColorstr='#c20f0f', GradientType=0);
+      box-shadow: 0px 18px 20px 0px #00000026;
+    }
+
+    .demais-polos-ead:hover {
+      background: rgba(240, 104, 104, 1);
+      background: -moz-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 0.75) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240, 104, 104, 1)), color-stop(100%, rgba(194, 15, 15, 0.75)));
+      background: -webkit-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 0.75) 100%);
+      background: -o-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 0.75) 100%);
+      background: -ms-linear-gradient(top, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 0.75) 100%);
+      background: linear-gradient(to bottom, rgba(240, 104, 104, 1) 0%, rgba(194, 15, 15, 0.75) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f06868', endColorstr='#c20f0f', GradientType=0);
+      box-shadow: 0px 18px 20px 0px #00000026;
+    }
+
+    div#content-core a.demais-polos-ead:first-of-type {
+      margin-left: 0;
+    }
+
+    a.demais-polos-ead span.inscrevaselink {
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      padding: 20px 0px 20px 0px;
+    }
+
+    a.demais-polos-ead i.fa {
+      background: #ffffff;
+      padding: 20px;
+      color: #c81a1a;
+      font-size: 30px;
+      border-radius: 50px;
+      box-shadow: 0px 0px 20px 0px #0000004d;
+    }
+
+    .d-none {
+      display: none;
+    }
+    
+    @media screen and (max-width: 767px){
+      .demais-polos-ead {
+        min-height: 165px;
+      }
+    }
+  </style>
+</metal:css>
+
+<body>
+  <metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+      <h1 id="parent-fieldname-title" class="documentFirstHeading titleThanks">
+        Inscrições para Graduação a Distância:
+      </h1>
+
+      <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/ead.php" target="_blank">
+        <i class="fa fa-pencil-square-o"></i>
+
+        <span class="inscrevaselink">
+          Prova de redação (graduação)
+        </span>
+      </a>
+
+      <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/segundaLicenciaturaEAD.php"
+        target="_blank">
+        <i class="fa fa-pencil-square-o"></i>
+
+        <span class="inscrevaselink">
+          Segunda licenciatura
+        </span>
+      </a>
+
+      <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/eadEnemExclusivo.php"
+        target="_blank">
+        <i class="fa fa-pencil-square-o"></i>
+
+        <span class="inscrevaselink">
+          Nota do ENEM (graduação)
+        </span>
+      </a>
+
+      <p>
+        <br />
+        <a href="javascript:window.history.back()">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          Voltar para página anterior
+        </a>
+
+      </p>
+
+      <script>
+
+        $(document).ready(function () {
+          $('.inscrevase').addClass('d-none'); // Inclui a classe "d-none" dentro da classe "inscrevase"
+        }
+        );
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Ads: 705998076 -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-705998076"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-705998076');
+      </script>
+
+      <!-- Facebook Pixel Code -->
+      <script>
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '515380222619914');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=515380222619914&ev=PageView&noscript=1" /></noscript>
+      <!-- End Facebook Pixel Code -->
+    </metal:content-core>
+  </metal:content-core>
+
+
+</body>
+
+</html>
