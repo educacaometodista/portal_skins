@@ -101,7 +101,6 @@
 
       <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/ead.php" target="_blank">
         <i class="fa fa-pencil-square-o"></i>
-
         <span class="inscrevaselink">
           Prova de redação (graduação)
         </span>
@@ -110,7 +109,6 @@
       <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/segundaLicenciaturaEAD.php"
         target="_blank">
         <i class="fa fa-pencil-square-o"></i>
-
         <span class="inscrevaselink">
           Segunda licenciatura
         </span>
@@ -119,9 +117,24 @@
       <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/eadEnemExclusivo.php"
         target="_blank">
         <i class="fa fa-pencil-square-o"></i>
-
         <span class="inscrevaselink">
           Nota do ENEM (graduação)
+        </span>
+      </a>
+
+      <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/eadEnemExclusivo.php"
+        target="_blank">
+        <i class="fa fa-pencil-square-o"></i>
+        <span class="secondline">
+          SECOND LINE
+        </span>
+      </a>
+
+      <a class="demais-polos-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/eadEnemExclusivo.php"
+        target="_blank">
+        <i class="fa fa-pencil-square-o"></i>
+        <span class="secondline">
+          SECOND LINE
         </span>
       </a>
 
