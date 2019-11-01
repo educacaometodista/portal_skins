@@ -81,7 +81,7 @@
     .secondline-ead {
       min-height: 120px;
       font-family: 'Roboto', sans-serif;
-      width: 49%;
+      width: 49.5%;
       margin-left: 1%;
       display: block;
       padding: 15px 0;
@@ -180,20 +180,20 @@
       </a>
     </div>
 
-    <div class="row mt-4">
-      <a class="secondline-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/eadEnemExclusivo.php"
+    <div class="row mt-2">
+      <a class="secondline-ead" href="http://portal.metodista.br/area-do-aluno/area-do-aluno/portador-de-diploma"
         target="_blank">
         <i class="fa fa-pencil-square-o"></i>
         <span class="inscrevaselink">
-          SECOND LINE
+          Segunda graduação
         </span>
       </a>
 
-      <a class="secondline-ead" href="https://www.metodista.br/sgpsims/web/modulos/portal/eadEnemExclusivo.php"
+      <a class="secondline-ead" href="http://portal.metodista.br/secretaria-academica/transferencias/transferencia-externa-e-portador-de-diploma-para-cursos-a-distancia-da-metodista"
         target="_blank">
         <i class="fa fa-pencil-square-o"></i>
         <span class="inscrevaselink">
-          SECOND LINE
+          Transferência
         </span>
       </a>
     </div>
