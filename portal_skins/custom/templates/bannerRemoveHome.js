@@ -1,5 +1,5 @@
 function bannerRemove() {
-  let banner = document.querySelector("#carouselBanner8");
+  let banner = document.querySelector(".allCard");
   banner.remove();
 }
 
@@ -10,11 +10,9 @@ function bannerChange() {
 }
 
 // Data atual
-const actualDate = new Date();
-const actualTimestamp = actualDate.getTime();
+const actualTimestamp = new Date().getTime();
 
 // Data final (quando deverá ser removido)
-const removeDate = new Date(2019, 10, 15, 00, 0, 0);
-const removeTimestamp = removeDate.getTime()
+const removeTimestamp = new Date("Dec 06, 2019 00:00:00").getTime();
 
-if (actualTimestamp >= removeTimestamp) { bannerChange() }
+if (actualTimestamp >= removeTimestamp) { bannerRemove() }
